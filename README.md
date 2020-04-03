@@ -13,7 +13,7 @@ This project allows a Windows computer (tested only on Windows 10) to:
 
 ## How to Run
 ### Quickstart
-First download the `StreamWatcherProduct.zip` which can be found [here](https://drive.google.com/drive/folders/1ETs3-628MX0-BNXk51u9sGjbR1vwzpHt?usp=sharing), move to your desired location and then unzip. Next, (configure if desired by seeing the *Configuration* section later, otherwise) run as shown below.
+First download the `StreamWatcherProduct.zip` which can be found [here](https://drive.google.com/file/d/1xByMWKbNFxKdJ3LVYDx_lP25UeKwVOJL/view?usp=sharing), move to your desired location and then unzip. Next, (configure if desired by seeing the *Configuration* section later, otherwise) run as shown below.
 
 #### Run the program
 
