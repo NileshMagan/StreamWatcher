@@ -1,0 +1,16 @@
+#from http://tlingenf.spaces.live.com/blog/cns!B1B09F516B5BAEBF!213.entry
+#
+[General]
+TaskName="StreamWatcher\LaunchTargetSite"
+LaunchTargetTaskName="StreamWatcher\LaunchTargetSite"
+CloseTargetTaskName="StreamWatcher\CloseTargetSite"
+
+[Times]
+StartTime=23:10
+StopTime=01:00
+
+[Locations]
+ScriptName="LaunchTargetSite.exe"
+LaunchTargetScriptName=LaunchTargetSite.exe
+CloseTargetScriptName=CloseTargetSite.exe
+ScriptPath="C:\Users\Nilesh Magan\source\repos\TestingConsoleApp\TestingConsoleApp\bin\Release\netcoreapp3.1\TestingConsoleApp.exe"
