@@ -32,8 +32,6 @@ namespace TargetSiteInteractor
             Process process = OpenUrl(chromiumDirectory, targetUrl);
 
             // Store process information
-            //var browserProcessId = process.Id;
-            //var browserProcessName = process.ProcessName;
             ProcessProperties propertiesToStore = new ProcessProperties {
                 processId = process.Id,
                 processName = process.ProcessName
@@ -45,11 +43,6 @@ namespace TargetSiteInteractor
             {
                 ConsoleKeyInfo result = Console.ReadKey(true);
                 if (result.Key == ConsoleKey.Escape) break;
-                //if (result.KeyChar == 'I' || result.KeyChar == 'i')
-                //{
-                //    Console.WriteLine("ID number: " + browserProcessId);
-                //}
-                //if (result.KeyChar == 'K' || result.KeyChar == 'k')
                 {
                     // Read properties from file
                     // Create file information
@@ -57,12 +50,10 @@ namespace TargetSiteInteractor
                     ProcessProperties processProperties = FileManager.ReadPropertiesFromFile(propertiiesFilePath2);
 
                     // Get process information back and validate it
-                    //Process p = Process.GetProcessById(browserProcessId);
                     Process browserProcess = Process.GetProcessById(processProperties.processId);
                     if (browserComparisonEnabled.Equals("true"))
                     {
                         // Validate by checking if the process name is the same as the one found earlier
-                        //if (browserNameComparison.Equals(browserProcessName))
                         if (browserNameComparison.Equals(processProperties.processName))
                         {
                             browserProcess.Kill(true);
